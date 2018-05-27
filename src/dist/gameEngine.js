@@ -313,8 +313,12 @@ gEngine.Input = (function () {
 
 	// Event service functions
 	var _onKeyDown = function (event) {
+		if(event.keyCode == 37 || event.keyCode == 38 || event.keyCode == 39 || event.keyCode == 40  ){
+			event.preventDefault();
+		}
     mIsKeyPressed[event.keyCode] = true;  };
 	var _onKeyUp = function (event)  {
+		event.preventDefault();
     mIsKeyPressed[event.keyCode] = false; };
 
 	var initialize = function (canvasID) {

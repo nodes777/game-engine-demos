@@ -241,9 +241,9 @@ MyGame.prototype.update = function () {
     xf = this.mIllumHero.getXform();
     this.mGlobalLightSet.getLightAt(2).set2DPosition(xf.getPosition());
 
-     if (gEngine.Input.isKeyClicked(gEngine.Input.keys.P)) {
-         this.mShowHeroCam = !this.mShowHeroCam;
-     }
+     // if (gEngine.Input.isKeyClicked(gEngine.Input.keys.P)) {
+     //     this.mShowHeroCam = !this.mShowHeroCam;
+     // }
 
     // control the selected light
     var msg = "L=" + this.mLgtIndex + " ";
